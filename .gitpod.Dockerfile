@@ -2,4 +2,6 @@
 FROM gitpod/workspace-python-3.10
 
 # Install Node.js and npm
-RUN brew install node
+RUN sudo apt-get update
+RUN sudo apt-get install -y nodejs
+RUN sudo apt-get install -y npm
